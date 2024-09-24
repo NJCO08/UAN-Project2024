@@ -1,0 +1,159 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Barra de navegación superior -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Bici Place"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:padding="16dp"
+        android:src="@drawable/baseline_shopping_cart_24"
+        android:tint="#401919"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campos de entrada -->
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de tu producto"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <!-- Imagen del producto -->
+
+    <!-- Descripción del producto -->
+
+    <!-- Botón Publicar -->
+
+    <Spinner
+        android:id="@+id/spCategory"
+        android:layout_width="191dp"
+        android:layout_height="66dp"
+        android:hint="Categoría"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etProductName" />
+
+    <ImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="339dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:background="#755252"
+        android:padding="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imagenproducto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spCategory" />
+
+    <EditText
+        android:id="@+id/etProductDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:hint="Describe tu producto..."
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivProductImage" />
+
+    <!-- Barra de navegación inferior -->
+
+    <LinearLayout
+        android:layout_width="603dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBycicles"
+            android:layout_width="100sp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/baseline_directions_bike_24"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="628dp" />
+
+        <ImageButton
+            android:id="@+id/btnOffers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/baseline_local_offer_24" />
+
+        <ImageButton
+            android:id="@+id/btnSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/baseline_add_24" />
+
+        <ImageButton
+            android:id="@+id/btnChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:src="@drawable/baseline_chat_24"
+            android:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/baseline_person_pin_24" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="44dp"
+        android:layout_height="22dp"
+        app:srcCompat="@drawable/baseline_close_24"
+        tools:layout_editor_absoluteX="346dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#D3AE2C"
+        android:text="Publicar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

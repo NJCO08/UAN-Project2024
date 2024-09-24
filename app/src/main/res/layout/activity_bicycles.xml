@@ -1,0 +1,252 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/nameAPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="BICI PLACE"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#F9F1E6"
+        android:text="Buscar..."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameAPP" />
+
+    <!-- Botón 3: Accesorios -->
+
+    <Button
+        android:id="@+id/buttonBicycles"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#813030"
+        android:text="Bicicletas"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonParts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+    <Button
+        android:id="@+id/buttonParts"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#813030"
+        android:text="Partes"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAccessories"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toEndOf="@id/buttonBicycles"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+    <Button
+        android:id="@+id/buttonAccessories"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#813030"
+        android:text="Accesorios"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonParts"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+    <ImageView
+        android:id="@+id/image_bicicleta1"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="164dp"
+        android:src="@drawable/imagebicicleta1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameBicycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Topstone carbon 6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/priceBicycle"
+        app:layout_constraintStart_toEndOf="@id/image_bicicleta1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/priceBicycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="$ 9,192,000"
+        app:layout_constraintBottom_toTopOf="@+id/name_color"
+        app:layout_constraintStart_toEndOf="@id/image_bicicleta1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/icon_color"
+        android:layout_width="14dp"
+        android:layout_height="18dp"
+        android:background="#304F76"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <TextView
+        android:id="@+id/name_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Blue"
+        app:layout_constraintBottom_toBottomOf="@id/icon_color"
+        app:layout_constraintStart_toEndOf="@id/icon_color"
+        app:layout_constraintTop_toTopOf="@id/icon_color" />
+
+    <ImageView
+        android:id="@+id/image_bicicleta2"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="288dp"
+        android:src="@drawable/imagebicicleta2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameBicycle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Trail SE 2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/priceBicycle"
+        app:layout_constraintStart_toEndOf="@id/image_bicicleta1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.58" />
+
+    <TextView
+        android:id="@+id/priceBicycle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="$ 6,300,000"
+        app:layout_constraintBottom_toTopOf="@+id/name_color"
+        app:layout_constraintStart_toEndOf="@id/image_bicicleta2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.53" />
+
+    <ImageView
+        android:id="@+id/icon_color2"
+        android:layout_width="14dp"
+        android:layout_height="18dp"
+        android:background="#009975"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <TextView
+        android:id="@+id/name_color2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Esmerald"
+        app:layout_constraintBottom_toBottomOf="@id/icon_color2"
+        app:layout_constraintStart_toEndOf="@id/icon_color2"
+        app:layout_constraintTop_toTopOf="@id/icon_color2" />
+
+    <ImageView
+        android:id="@+id/image_bicicleta3"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="408dp"
+        android:src="@drawable/imagebicicleta3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameBicycle3"
+        android:layout_width="109dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:text="Scalpel Carbon 2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/priceBicycle"
+        app:layout_constraintStart_toEndOf="@id/image_bicicleta1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="2.10" />
+
+    <TextView
+        android:id="@+id/priceBicycle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="$ 24,440,000"
+        app:layout_constraintBottom_toTopOf="@+id/name_color"
+        app:layout_constraintStart_toEndOf="@id/image_bicicleta2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="2" />
+
+    <ImageView
+        android:id="@+id/icon_color3"
+        android:layout_width="14dp"
+        android:layout_height="18dp"
+        android:background="#BEBEBE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.60" />
+
+    <TextView
+        android:id="@+id/name_color3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Steal Gray"
+        app:layout_constraintBottom_toBottomOf="@id/icon_color3"
+        app:layout_constraintStart_toEndOf="@id/icon_color3"
+        app:layout_constraintTop_toTopOf="@id/icon_color3" />
+
+    <ImageView
+        android:id="@+id/image_bicicleta4"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="532dp"
+        android:src="@drawable/imagebicicleta4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
