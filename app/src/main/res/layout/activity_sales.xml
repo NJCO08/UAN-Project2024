@@ -19,18 +19,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Campos de entrada -->
     <ImageButton
         android:id="@+id/btnClose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#FFFFFF"
         android:padding="16dp"
+
         android:src="@drawable/baseline_shopping_cart_24"
-        android:tint="#401919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Campos de entrada -->
     <EditText
         android:id="@+id/etProductName"
         android:layout_width="0dp"
@@ -41,11 +42,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
-    <!-- Imagen del producto -->
-
-    <!-- Descripción del producto -->
-
-    <!-- Botón Publicar -->
 
     <Spinner
         android:id="@+id/spCategory"
@@ -71,11 +67,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spCategory" />
 
+    <!-- Barra de navegación inferior -->
+
+
+    <Spinner
+        android:id="@+id/color_spinner"
+        android:layout_width="192dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/etProductDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProductImage"
+        app:layout_constraintVertical_bias="0.5" />
+
     <EditText
         android:id="@+id/etProductDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="68dp"
         android:hint="Describe tu producto..."
         android:inputType="textMultiLine"
         android:padding="16dp"
@@ -84,64 +95,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivProductImage" />
 
-    <!-- Barra de navegación inferior -->
-
-    <LinearLayout
-        android:layout_width="603dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="28dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageButton
-            android:id="@+id/btnBycicles"
-            android:layout_width="100sp"
-            android:layout_height="50dp"
-            android:backgroundTint="#FFFFFF"
-            android:src="@drawable/baseline_directions_bike_24"
-            tools:layout_editor_absoluteX="113dp"
-            tools:layout_editor_absoluteY="628dp" />
-
-        <ImageButton
-            android:id="@+id/btnOffers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:src="@drawable/baseline_local_offer_24" />
-
-        <ImageButton
-            android:id="@+id/btnSell"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:src="@drawable/baseline_add_24" />
-
-        <ImageButton
-            android:id="@+id/btnChat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#000000"
-            android:src="@drawable/baseline_chat_24"
-            android:tint="#FFFFFF" />
-
-        <ImageButton
-            android:id="@+id/btnProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:src="@drawable/baseline_person_pin_24" />
-    </LinearLayout>
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="44dp"
         android:layout_height="22dp"
-        app:srcCompat="@drawable/baseline_close_24"
-        tools:layout_editor_absoluteX="346dp"
-        tools:layout_editor_absoluteY="84dp" />
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_close_24" />
 
     <Button
         android:id="@+id/button2"
@@ -152,8 +114,149 @@
         android:text="Publicar"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="562dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
 
+    <EditText
+        android:id="@+id/price_edittext"
+        android:layout_width="157dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="$0"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/color_spinner" />
 
+    <LinearLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Botón de Inicio -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnInicio"
+                android:layout_width="52dp"
+                android:layout_height="53dp"
+                android:background="@null"
+                android:src="@drawable/baseline_directions_bike_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicio"
+                android:textColor="#8B6D5A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Ofertas -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnOfertas"
+                android:layout_width="52dp"
+                android:layout_height="55dp"
+                android:background="@null"
+                android:src="@drawable/baseline_local_offer_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ofertas"
+                android:textColor="#8B6D5A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Vender -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnVender"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFC107"
+                android:src="@drawable/baseline_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vender"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Chat -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnChat"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:background="@null"
+                android:src="@drawable/baseline_chat_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:textColor="#8B6D5A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Perfil -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnPerfil"
+                android:layout_width="49dp"
+                android:layout_height="52dp"
+                android:background="@null"
+                android:src="@drawable/baseline_person_pin_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textColor="#8B6D5A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

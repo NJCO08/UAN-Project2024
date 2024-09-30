@@ -1,0 +1,263 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Nombre App -->
+    <TextView
+        android:id="@+id/nameAPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="BICI PLACE"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón de buscar -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#F9F1E6"
+        android:text="Buscar..."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameAPP" />
+
+    <!-- Botón de Bicicletas -->
+    <Button
+        android:id="@+id/buttonBicycles"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#E5C7C7"
+        android:text="Bicicletas"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonParts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+    <!-- Botón de partes -->
+    <Button
+        android:id="@+id/buttonParts"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#813030"
+        android:text="Partes"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAccessories"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toEndOf="@id/buttonBicycles"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+    <!-- Botón de Acessories -->
+    <Button
+        android:id="@+id/buttonAccessories"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#E5C7C7"
+        android:text="Accesorios"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonParts"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+    <!-- imagen Parte 1 -->
+    <ImageView
+        android:id="@+id/parte1"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="164dp"
+        android:src="@drawable/sillin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- nombre Parte 1 -->
+
+    <!-- Precio Parte 1 -->
+    <TextView
+        android:id="@+id/parte1_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="24dp"
+        android:text="Sillin de bicicleta D3735"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/parte1"
+        app:layout_constraintTop_toBottomOf="@id/buttonParts" />
+
+    <TextView
+        android:id="@+id/parte1_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:text="$ 44.600"
+        app:layout_constraintStart_toStartOf="@id/parte1"
+        app:layout_constraintTop_toBottomOf="@id/parte1_nombre" />
+
+    <!-- Color Parte 1 -->
+    <TextView
+        android:id="@+id/parte1_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="8dp"
+        android:text="Black"
+        app:layout_constraintStart_toStartOf="@id/parte1"
+        app:layout_constraintTop_toBottomOf="@id/parte1_precio" />
+
+    <!-- imagen Parte 2 -->
+    <ImageView
+        android:id="@+id/parte2"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="288dp"
+        android:src="@drawable/pedales"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nombre Parte 2 -->
+
+    <!-- Precio Parte 2 -->
+
+    <TextView
+        android:id="@+id/parte2_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="148dp"
+        android:text="Pedales Ruta ZP-110"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/parte2"
+        app:layout_constraintTop_toBottomOf="@id/buttonParts" />
+
+    <TextView
+        android:id="@+id/parte2_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:text="$ 138.600"
+        app:layout_constraintStart_toStartOf="@id/parte2"
+        app:layout_constraintTop_toBottomOf="@id/parte2_nombre" />
+
+    <!-- Color Parte 2 -->
+    <TextView
+        android:id="@+id/parte2_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="8dp"
+        android:text="Black"
+        app:layout_constraintStart_toStartOf="@id/parte2"
+        app:layout_constraintTop_toBottomOf="@id/parte2_precio" />
+
+    <!-- Imagen Parte 3-->
+    <ImageView
+        android:id="@+id/parte3"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="408dp"
+        android:src="@drawable/cadena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nombre Parte 3-->
+
+    <!-- Precio Parte 3-->
+    <TextView
+        android:id="@+id/parte3_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="284dp"
+        android:text="Cadena KMC 12V 126L X12"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/parte3"
+        app:layout_constraintTop_toBottomOf="@id/buttonParts" />
+
+    <!-- Color Parte 3-->
+
+    <!-- Imagen Parte 4-->
+    <TextView
+        android:id="@+id/parte3_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:text="$ 314.600"
+        app:layout_constraintStart_toStartOf="@id/parte3"
+        app:layout_constraintTop_toBottomOf="@id/parte3_nombre" />
+
+    <TextView
+        android:id="@+id/parte3_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="4dp"
+        android:text="Gold/Black"
+        app:layout_constraintStart_toStartOf="@id/parte3"
+        app:layout_constraintTop_toBottomOf="@id/parte3_precio" />
+
+
+    <ImageView
+        android:id="@+id/parte4"
+        android:layout_width="73dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="512dp"
+        android:src="@drawable/rueda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/parte4_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="416dp"
+        android:text="Ruedas ruta 700C-Omega"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/parte4"
+        app:layout_constraintTop_toBottomOf="@id/buttonParts" />
+
+    <TextView
+        android:id="@+id/parte4_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="20dp"
+        android:text="$ 300.900"
+        app:layout_constraintStart_toStartOf="@id/parte4"
+        app:layout_constraintTop_toBottomOf="@id/parte4_nombre" />
+
+    <TextView
+        android:id="@+id/parte4_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="8dp"
+        android:text="Black"
+        app:layout_constraintStart_toStartOf="@id/parte4"
+        app:layout_constraintTop_toBottomOf="@id/parte4_precio" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

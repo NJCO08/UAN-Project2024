@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Nombre App -->
+    <TextView
+        android:id="@+id/nameAPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="BICI PLACE"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón de buscar -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#F9F1E6"
+        android:text="Buscar..."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameAPP" />
+    <!-- User Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:src="@drawable/baseline_person_pin_24" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USUARIO"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usuario1@example.com"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Sold Items Section -->
+    <TextView
+        android:id="@+id/sold_items_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artículos vendidos"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Placeholder for Sold Items -->
+    <ImageView
+        android:id="@+id/sold_items_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/imagenproducto"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Purchased Items Section -->
+    <TextView
+        android:id="@+id/purchased_items_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artículos comprados"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Placeholder for Purchased Items -->
+    <ImageView
+        android:id="@+id/purchased_items_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/imagenproducto"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Settings Section -->
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:text="Configuración"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/settings_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguridad, info. de perfil, Ayuda"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E9E9E9"
+        android:textColor="#D20909"
+        android:text="Cerrar sesión" />
+</LinearLayout>
+

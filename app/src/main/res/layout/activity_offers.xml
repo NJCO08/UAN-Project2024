@@ -1,10 +1,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Nombre App -->
+
     <TextView
         android:id="@+id/nameAPP"
         android:layout_width="wrap_content"
@@ -18,7 +17,23 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Botón de buscar -->
+
+    <TextView
+        android:id="@+id/Tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="APROVECHA!"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/searchButton"
         android:layout_width="350dp"
@@ -32,85 +47,52 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nameAPP" />
 
-    <!-- Botón de Bicicletas -->
-    <Button
-        android:id="@+id/buttonBicycles"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#813030"
-        android:text="Bicicletas"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toStartOf="@+id/btnParts"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchButton" />
 
-    <!-- Botón de partes -->
-    <Button
-        android:id="@+id/btnParts"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#E5C7C7"
-        android:text="Partes"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toStartOf="@+id/buttonAccessories"
-        app:layout_constraintHorizontal_bias="0.303"
-        app:layout_constraintStart_toEndOf="@id/buttonBicycles"
-        app:layout_constraintTop_toBottomOf="@id/searchButton" />
 
-    <!-- Botón de Acessories -->
-    <Button
-        android:id="@+id/buttonAccessories"
-        android:layout_width="120dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#E5C7C7"
-        android:text="Accesorios"
-        android:textAlignment="center"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btnParts"
-        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+    <TextView
+        android:id="@+id/discount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="56% OFF"
+        android:textColor="#009975"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- imagen Bicicleta 1 -->
     <ImageView
         android:id="@+id/image_bicicleta1"
         android:layout_width="121dp"
         android:layout_height="106dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="164dp"
-        android:src="@drawable/imagebicicleta1"
+        android:src="@drawable/imagebicicleta5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- nombre Bicicleta 1 -->
     <TextView
         android:id="@+id/bicicleta1_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="24dp"
-        android:text="Topstone carbon 6"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:text="Roadmaster / Runner F"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/image_bicicleta1"
-        app:layout_constraintTop_toBottomOf="@id/btnParts" />
+        app:layout_constraintTop_toBottomOf="@id/discount1" />
 
-    <!-- Precio Bicicleta 1 -->
     <TextView
         android:id="@+id/bicicleta1_precio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginTop="16dp"
-        android:text="$ 9.192.000"
+        android:text="$ 1.652.900"
         app:layout_constraintStart_toStartOf="@id/image_bicicleta1"
         app:layout_constraintTop_toBottomOf="@id/bicicleta1_nombre" />
 
-    <!-- Color Bicicleta 1 -->
     <TextView
         android:id="@+id/bicicleta1_color"
         android:layout_width="wrap_content"
@@ -121,74 +103,93 @@
         app:layout_constraintStart_toStartOf="@id/image_bicicleta1"
         app:layout_constraintTop_toBottomOf="@id/bicicleta1_precio" />
 
+    <TextView
+        android:id="@+id/discount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:text="50% OFF"
+        android:textColor="#009975"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/image_bicicleta2"
         android:layout_width="121dp"
         android:layout_height="106dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="288dp"
-        android:src="@drawable/imagebicicleta2"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/imagebicicleta6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Nombre Bicicleta 2 -->
     <TextView
         android:id="@+id/bicicleta2_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="160dp"
-        android:text="Trail SE 2"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:text="Fire Shimano 11"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/image_bicicleta2"
-        app:layout_constraintTop_toBottomOf="@id/btnParts" />
+        app:layout_constraintTop_toBottomOf="@id/discount2" />
 
-    <!-- Precio Bicicleta 2 -->
     <TextView
         android:id="@+id/bicicleta2_precio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginTop="16dp"
-        android:text="$ 6.300.000"
+        android:text="$ 1.849.000"
         app:layout_constraintStart_toStartOf="@id/image_bicicleta2"
         app:layout_constraintTop_toBottomOf="@id/bicicleta2_nombre" />
 
-    <!-- Color Bicicleta 2 -->
     <TextView
         android:id="@+id/bicicleta2_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
         android:layout_marginTop="8dp"
-        android:text="Esmerald"
+        android:text="Red"
         app:layout_constraintStart_toStartOf="@id/image_bicicleta2"
         app:layout_constraintTop_toBottomOf="@id/bicicleta2_precio" />
 
-    <!-- Imagen Bicicleta 3-->
+    <TextView
+        android:id="@+id/discount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="412dp"
+        android:text="59% OFF"
+        android:textColor="#009975"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/image_bicicleta3"
         android:layout_width="121dp"
         android:layout_height="106dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="408dp"
-        android:src="@drawable/imagebicicleta3"
+        android:layout_marginTop="452dp"
+        android:src="@drawable/imagebicicleta7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Nombre Bicicleta 3-->
     <TextView
         android:id="@+id/bicicleta3_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="268dp"
-        android:text="Scalpel Carbon 2"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:text="Roadmaster Storm / 29 F"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/image_bicicleta3"
-        app:layout_constraintTop_toBottomOf="@id/btnParts" />
+        app:layout_constraintTop_toBottomOf="@id/discount3" />
 
-    <!-- Precio Bicicleta 3-->
     <TextView
         android:id="@+id/bicicleta3_precio"
         android:layout_width="wrap_content"
@@ -199,7 +200,6 @@
         app:layout_constraintStart_toStartOf="@id/image_bicicleta3"
         app:layout_constraintTop_toBottomOf="@id/bicicleta3_nombre" />
 
-    <!-- Color Bicicleta 3-->
     <TextView
         android:id="@+id/bicicleta3_color"
         android:layout_width="wrap_content"
@@ -210,53 +210,6 @@
         app:layout_constraintStart_toStartOf="@id/image_bicicleta3"
         app:layout_constraintTop_toBottomOf="@id/bicicleta3_precio" />
 
-    <!-- Imagen Bicicleta 4-->
-    <ImageView
-        android:id="@+id/image_bicicleta4"
-        android:layout_width="121dp"
-        android:layout_height="106dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="532dp"
-        android:src="@drawable/imagebicicleta4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!--- Nombre Bicicleta 4-->
-
-    <!--- Precio Bicicleta 4 -->
-
-    <TextView
-        android:id="@+id/bicicleta4_nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="392dp"
-        android:text="Roadmaster Storm / 29 F"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/image_bicicleta4"
-        app:layout_constraintTop_toBottomOf="@id/btnParts" />
-
-    <!--- Color Bicicleta 4 -->
-    <TextView
-        android:id="@+id/bicicleta4_precio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="12dp"
-        android:text="$ 24.440.00"
-        app:layout_constraintStart_toStartOf="@id/image_bicicleta4"
-        app:layout_constraintTop_toBottomOf="@id/bicicleta4_nombre" />
-
-
-    <TextView
-        android:id="@+id/bicicleta4_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="8dp"
-        android:text="Red/Black"
-        app:layout_constraintStart_toStartOf="@id/image_bicicleta4"
-        app:layout_constraintTop_toBottomOf="@id/bicicleta4_precio" />
 
     <LinearLayout
         android:id="@+id/navigation_layout"
@@ -282,7 +235,7 @@
                 android:id="@+id/btnInicio"
                 android:layout_width="61dp"
                 android:layout_height="72dp"
-                android:backgroundTint="#D3AE2C"
+                android:backgroundTint="#FFFFFF"
                 android:src="@drawable/baseline_directions_bike_24" />
 
             <TextView
@@ -305,7 +258,7 @@
                 android:id="@+id/btnOffers"
                 android:layout_width="61dp"
                 android:layout_height="72dp"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="#D3AE2C"
                 android:src="@drawable/baseline_local_offer_24" />
 
             <TextView
@@ -342,47 +295,48 @@
         <!-- Botón de Chat -->
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="88dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
 
             <ImageButton
                 android:id="@+id/btnChat"
-                android:layout_width="61dp"
-                android:layout_height="72dp"
+                android:layout_width="40dp"
+                android:layout_height="62dp"
                 android:backgroundTint="#FFFFFF"
                 android:src="@drawable/baseline_chat_24" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="36dp"
                 android:layout_height="wrap_content"
                 android:text="Chat"
-                android:textColor="#000000"
+                android:textColor="#8B6D5A"
                 android:textSize="12sp" />
+
         </LinearLayout>
 
         <!-- Botón de Perfil -->
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="88dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/btnProfile"
-                android:layout_width="61dp"
-                android:layout_height="72dp"
-                android:backgroundTint="#FFFFFF"
+                android:id="@+id/btnPerfil"
+                android:layout_width="49dp"
+                android:layout_height="52dp"
+                android:background="@null"
                 android:src="@drawable/baseline_person_pin_24" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Perfil"
-                android:textColor="#000000"
+                android:textColor="#8B6D5A"
                 android:textSize="12sp" />
         </LinearLayout>
 

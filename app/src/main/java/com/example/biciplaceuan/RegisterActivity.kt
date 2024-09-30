@@ -1,22 +1,28 @@
 package com.example.biciplaceuan
-package com.example.biciplaceuan
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_register)
 
-        val letsGoButton: Button = findViewById(R.id.lets_go_button)
-        letsGoButton.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
+        // Encontrar el botón
+        val loginButton = findViewById<Button>(R.id.login_button)
+
+        // Configurar el listener para el botón
+        loginButton.setOnClickListener {
+            // Crear un Intent para ir a BicyclesActivity
+            val intent = Intent(this, BicyclesActivity::class.java)
             startActivity(intent)
         }
     }
 }
+
+
+
 

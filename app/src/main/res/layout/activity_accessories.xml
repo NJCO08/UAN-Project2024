@@ -1,0 +1,266 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Nombre App -->
+    <TextView
+        android:id="@+id/nameAPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="BICI PLACE"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón de buscar -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#F9F1E6"
+        android:text="Buscar..."
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameAPP" />
+
+    <!-- Botón de Bicicletas -->
+    <Button
+        android:id="@+id/buttonBicycles"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#E5C7C7"
+        android:text="Bicicletas"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonParts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+    <!-- Botón de partes -->
+    <Button
+        android:id="@+id/buttonParts"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#E5C7C7"
+        android:text="Partes"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAccessories"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toEndOf="@id/buttonBicycles"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+    <!-- Botón de Acessories -->
+    <Button
+        android:id="@+id/buttonAccessories"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#813030"
+        android:text="Accesorios"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonParts"
+        app:layout_constraintTop_toBottomOf="@id/searchButton" />
+
+    <!-- imagen Accesorio 1 -->
+
+    <!-- nombre Accesorio 1 -->
+    <ImageView
+        android:id="@+id/accesorio1"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/casco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/accesorio1_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="24dp"
+        android:text="Casco 029 Ruta"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/accesorio1"
+        app:layout_constraintTop_toBottomOf="@id/buttonParts" />
+
+    <!-- Precio Accesorio 1 -->
+    <TextView
+        android:id="@+id/accesorio1_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:text="$ 139.900"
+        app:layout_constraintStart_toStartOf="@id/accesorio1"
+        app:layout_constraintTop_toBottomOf="@id/accesorio1_nombre" />
+
+    <!-- Color Accesorio 1 -->
+    <TextView
+        android:id="@+id/accesorio1_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="8dp"
+        android:text="Black/White"
+        app:layout_constraintStart_toStartOf="@id/accesorio1"
+        app:layout_constraintTop_toBottomOf="@id/accesorio1_precio" />
+
+    <!-- imagen Accesorio 2 -->
+    <ImageView
+        android:id="@+id/accesorio2"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="288dp"
+        android:src="@drawable/bomba"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nombre Accesorio 2 -->
+
+    <!-- Precio Accesorio 2 -->
+
+    <TextView
+        android:id="@+id/accesorio2_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="148dp"
+        android:text="Iflador digital P29B-03"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/accesorio2"
+        app:layout_constraintTop_toBottomOf="@id/buttonParts" />
+
+    <TextView
+        android:id="@+id/accesorio2_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:text="$ 140.600"
+        app:layout_constraintStart_toStartOf="@id/accesorio2"
+        app:layout_constraintTop_toBottomOf="@id/accesorio2_nombre" />
+
+    <!-- Color Accesorio 2 -->
+    <TextView
+        android:id="@+id/accesorio2_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="8dp"
+        android:text="Black"
+        app:layout_constraintStart_toStartOf="@id/accesorio2"
+        app:layout_constraintTop_toBottomOf="@id/accesorio2_precio" />
+
+    <!-- Imagen Accesorio 3-->
+    <ImageView
+        android:id="@+id/accesorio3"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="408dp"
+        android:src="@drawable/caramanola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nombre Accesorio 3-->
+    <TextView
+        android:id="@+id/accesorio3_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="268dp"
+        android:text="Caramañola Elite Kebea"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/accesorio3"
+        app:layout_constraintTop_toBottomOf="@id/buttonParts" />
+
+    <!-- Precio Accesorio 3-->
+    <TextView
+        android:id="@+id/accesorio3_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:text="$ 11.600"
+        app:layout_constraintStart_toStartOf="@id/accesorio3"
+        app:layout_constraintTop_toBottomOf="@id/accesorio3_nombre" />
+
+    <!-- Color Accesorio 3-->
+    <TextView
+        android:id="@+id/accesorio3_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="8dp"
+        android:text="Yellow/Black"
+        app:layout_constraintStart_toStartOf="@id/accesorio3"
+        app:layout_constraintTop_toBottomOf="@id/accesorio3_precio" />
+
+        <!-- Imagen Accesorio 4-->
+    <ImageView
+        android:id="@+id/accesorio4"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="532dp"
+        android:src="@drawable/gafas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--- Nombre Accesorio 4-->
+
+    <!--- Precio Accesorio 4 -->
+
+    <TextView
+        android:id="@+id/accesorio4_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="392dp"
+        android:text="Goggles Path Transparente"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/accesorio4"
+        app:layout_constraintTop_toBottomOf="@id/buttonParts" />
+
+    <TextView
+        android:id="@+id/accesorio4_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="16dp"
+        android:text="$ 102.900"
+        app:layout_constraintStart_toStartOf="@id/accesorio4"
+        app:layout_constraintTop_toBottomOf="@id/accesorio4_nombre" />
+
+    <!--- Color Accesorio 4 -->
+    <TextView
+        android:id="@+id/accesori4_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="8dp"
+        android:text="Black"
+        app:layout_constraintStart_toStartOf="@id/accesorio4"
+        app:layout_constraintTop_toBottomOf="@id/accesorio4_precio" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
