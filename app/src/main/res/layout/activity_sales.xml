@@ -131,6 +131,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/color_spinner" />
 
+
     <LinearLayout
         android:id="@+id/navigation_layout"
         android:layout_width="0dp"
@@ -153,9 +154,9 @@
 
             <ImageButton
                 android:id="@+id/btnInicio"
-                android:layout_width="52dp"
-                android:layout_height="53dp"
-                android:background="@null"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
                 android:src="@drawable/baseline_directions_bike_24" />
 
             <TextView
@@ -175,10 +176,10 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/btnOfertas"
-                android:layout_width="52dp"
-                android:layout_height="55dp"
-                android:background="@null"
+                android:id="@+id/btnOffers"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
                 android:src="@drawable/baseline_local_offer_24" />
 
             <TextView
@@ -198,10 +199,10 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/btnVender"
+                android:id="@+id/btnSells"
                 android:layout_width="61dp"
                 android:layout_height="72dp"
-                android:backgroundTint="#FFC107"
+                android:backgroundTint="#D3AE2C"
                 android:src="@drawable/baseline_add_24" />
 
             <TextView
@@ -215,48 +216,50 @@
         <!-- Botón de Chat -->
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="76dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
+
             <ImageButton
                 android:id="@+id/btnChat"
-                android:layout_width="wrap_content"
-                android:layout_height="46dp"
-                android:background="@null"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
                 android:src="@drawable/baseline_chat_24" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Chat"
-                android:textColor="#8B6D5A"
+                android:textColor="#000000"
                 android:textSize="12sp" />
         </LinearLayout>
 
         <!-- Botón de Perfil -->
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="88dp"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/btnPerfil"
-                android:layout_width="49dp"
-                android:layout_height="52dp"
-                android:background="@null"
+                android:id="@+id/btnProfile"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
                 android:src="@drawable/baseline_person_pin_24" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Perfil"
-                android:textColor="#8B6D5A"
+                android:textColor="#000000"
                 android:textSize="12sp" />
         </LinearLayout>
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

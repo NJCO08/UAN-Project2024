@@ -24,7 +24,9 @@
         <activity android:name=".PartsActivity" />
         <activity android:name=".AccessoriesActivity"></activity>
         <activity android:name=".OffersActivity"></activity>
-
+        <activity android:name=".SellsActivity"></activity>
+        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
 
         <activity
             android:name="com.example.biciplaceuan.MainActivity"

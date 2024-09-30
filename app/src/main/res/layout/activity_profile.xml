@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,11 +17,7 @@
         android:text="BICI PLACE"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:layout_gravity="center"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center" />
 
     <!-- Botón de buscar -->
     <Button
@@ -31,10 +28,8 @@
         android:backgroundTint="#F9F1E6"
         android:text="Buscar..."
         android:textAlignment="textStart"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nameAPP" />
+        android:textColor="@color/black" />
+
     <!-- User Info -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,14 +56,14 @@
                 android:layout_height="wrap_content"
                 android:text="USUARIO"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="usuario1@example.com"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -79,7 +74,7 @@
         android:layout_height="wrap_content"
         android:text="Artículos vendidos"
         android:textSize="18sp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp" />
 
     <!-- Placeholder for Sold Items -->
     <ImageView
@@ -87,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:src="@drawable/imagenproducto"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp" />
 
     <!-- Purchased Items Section -->
     <TextView
@@ -96,7 +91,7 @@
         android:layout_height="wrap_content"
         android:text="Artículos comprados"
         android:textSize="18sp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp" />
 
     <!-- Placeholder for Purchased Items -->
     <ImageView
@@ -104,7 +99,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:src="@drawable/imagenproducto"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp" />
 
     <!-- Settings Section -->
     <TextView
@@ -121,7 +116,7 @@
         android:layout_height="wrap_content"
         android:text="Seguridad, info. de perfil, Ayuda"
         android:textSize="14sp"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp" />
 
     <!-- Logout Button -->
     <Button
@@ -132,5 +127,130 @@
         android:backgroundTint="#E9E9E9"
         android:textColor="#D20909"
         android:text="Cerrar sesión" />
-</LinearLayout>
 
+    <!-- Botones de navegación -->
+    <LinearLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Botón de Inicio -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnInicio"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/baseline_directions_bike_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicio"
+                android:textColor="#8B6D5A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Ofertas -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnOffers"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/baseline_local_offer_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ofertas"
+                android:textColor="#8B6D5A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Vender -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSells"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/baseline_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vender"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Chat -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnChat"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/baseline_chat_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Perfil -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnProfile"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#D3AE2C"
+                android:src="@drawable/baseline_person_pin_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

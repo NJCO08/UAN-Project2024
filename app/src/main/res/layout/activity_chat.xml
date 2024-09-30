@@ -1,79 +1,205 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <!-- Nombre App -->
-    <TextView
-        android:id="@+id/nameAPP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:text="BICI PLACE"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:layout_gravity="center"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Botón de buscar -->
-    <Button
-        android:id="@+id/searchButton"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:backgroundTint="#F9F1E6"
-        android:text="Buscar..."
-        android:textAlignment="textStart"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nameAPP" />
-
-    <!-- Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <Button
-            android:id="@+id/btnAll"
-            android:layout_width="3dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:backgroundTint="#813030"
-            android:text="Todos" />
-
-        <Button
-            android:id="@+id/btnUnread"
-            android:layout_width="0dp"
+        <!-- Nombre App -->
+        <TextView
+            android:id="@+id/nameAPP"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#E5C7C7"
-            android:text="No leidos" />
+            android:fontFamily="cursive"
+            android:text="BICI PLACE"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center" />
 
+        <!-- Botón de buscar -->
         <Button
-            android:id="@+id/btnRead"
-            android:layout_width="0dp"
+            android:id="@+id/searchButton"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#E5C7C7"
-            android:text="Leidos" />
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#F9F1E6"
+            android:text="Buscar..."
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#813030"
+                android:text="Todos" />
+
+            <Button
+                android:id="@+id/btnUnread"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#E5C7C7"
+                android:text="No leídos" />
+
+            <Button
+                android:id="@+id/btnRead"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#E5C7C7"
+                android:text="Leídos" />
+        </LinearLayout>
+
+        <!-- Placeholder Text -->
+        <TextView
+            android:id="@+id/placeholder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tus últimos mensajes aparecerán aquí" />
+
     </LinearLayout>
 
-    <!-- Placeholder Text -->
-    <TextView
-        android:id="@+id/placeholder_text"
-        android:layout_width="wrap_content"
+    <!-- Navigation Layout -->
+    <LinearLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Tus últimos mensajes aparecerán aquí" />
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
+        <!-- Botón de Inicio -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnInicio"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/baseline_directions_bike_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicio"
+                android:textColor="#8B6D5A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Ofertas -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnOffers"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/baseline_local_offer_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ofertas"
+                android:textColor="#8B6D5A"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Vender -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSells"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/baseline_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vender"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Chat -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnChat"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#D3AE2C"
+                android:src="@drawable/baseline_chat_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Botón de Perfil -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnProfile"
+                android:layout_width="61dp"
+                android:layout_height="72dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/baseline_person_pin_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
