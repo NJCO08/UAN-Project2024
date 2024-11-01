@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Bici Place UAN"
+rootProject.name = "gameshop"
 include(":app")
  

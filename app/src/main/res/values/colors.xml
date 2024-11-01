@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="naranja">#D3AE2C</color>
-    <color name="beige">#E6D1B5</color>
-    <color name="light_blue">#ADD8E6</color>
-    <color name="purple">#800080</color>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
-    <color name="pink">#E5C7C7</color>
-    <color name="red">#D20909</color>
-    <color name="Green">#009975</color>
-
-
-
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink">#E9BDB3</color>
+    <color name="gray">#808080</color>
+    <color name="orange">#FEA900</color>
 </resources>
